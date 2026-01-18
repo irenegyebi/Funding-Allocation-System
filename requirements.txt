@@ -6,3 +6,4 @@ pyyaml
 scipy
 scikit-learn
 python-dateutil
+statsmodels
