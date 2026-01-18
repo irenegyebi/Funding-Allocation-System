@@ -1,0 +1,171 @@
+# Funding Allocator System Configuration
+# Energy Assistance Allocation System
+# Version: 3.0 Enterprise Edition
+
+system:
+  name: "Energy Assistance Allocation System"
+  version: "3.0"
+  fiscal_year: "FY2025"
+  last_updated: "2024-12-29"
+  environment: "production"  # development, staging, production
+
+# Funding Parameters
+funding:
+  total_appropriation: 6800000  # $6.8M total funding
+  reserve_percentage: 0.05      # 5% reserve
+  reserve_amount: 340000        # Calculated: $6.8M * 5%
+  available_for_allocation: 6460000  # Calculated: $6.8M - $340K
+  minimum_floor: 0.04           # 4% minimum allocation
+  maximum_cap: 0.22             # 22% maximum allocation
+  efficiency_bonus_pool: 0.02   # 2% bonus for high performers
+  emergency_threshold: 0.25     # 25% energy burden triggers priority
+
+# Criteria Weights (Total = 1.0)
+# Need-based factors (70%) + Performance-based factors (30%)
+weights:
+  income_level: 0.25           # Lower income = higher need (inverse)
+  energy_burden: 0.30          # Primary mission indicator (30% weight)
+  poverty_rate: 0.20           # Supplemental income validation
+  prior_utilization: 0.15      # Program performance (15% of performance)
+  compliance_score: 0.10       # Accountability (10% of performance)
+  vulnerable_population: 0.05  # Seniors, disabled, children bonus
+
+# Performance Thresholds
+performance:
+  compliance_target: 90        # Target compliance score
+  utilization_target: 90       # Target utilization rate (%)
+  error_rate_max: 0.03         # Maximum acceptable error rate
+  audit_score_min: 80          # Minimum audit score
+
+# Equity Targets
+equity:
+  coefficient_variation_max: 0.30
+  gini_coefficient_max: 0.35
+  urban_rural_ratio_max: 2.0
+  geographic_equity_min: 0.90
+  demographic_equity_min: 0.85
+
+# API Configuration
+api:
+  census:
+    endpoint: "https://api.census.gov/data/2023/acs/acs5"
+    key: "a5e42665110731972d59fb25c0e722bd79b11e66"  # Replace with actual key
+    refresh_interval: 2592000   # 30 days in seconds
+    
+  eia:
+    endpoint: "https://api.eia.gov/v2/"
+    key: "3k8DtqqKFeiPefPcqQcitGYPqsAUyvukdIIJV9md"     # Replace with actual key
+    refresh_interval: 604800    # 7 days in seconds
+    
+  noaa:
+    endpoint: "https://www.ncei.noaa.gov/cdo-web/api/v2/"
+    token: "gufaHQCMvbUDpMVAPJRBvbKUETclbNHB"    # Replace with actual token
+    refresh_interval: 86400     # 1 day in seconds
+
+# Data Sources
+sources:
+  demographics: "data/master_input.csv"
+  historical: "data/historical_trends.csv"
+  compliance: "data/compliance_details.csv"
+  energy_costs: "data/energy_costs.csv"
+  
+# File Paths
+paths:
+  data: "data/"
+  logs: "logs/"
+  reports: "reports/"
+  backups: "backups/"
+  config: "config/"
+  assets: "assets/"
+
+# Logging Configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  max_file_size: 10485760  # 10MB
+  backup_count: 5
+  
+  # Log file locations
+  files:
+    system: "logs/system.log"
+    allocation: "logs/allocation.log"
+    compliance: "logs/compliance.log"
+    api: "logs/api.log"
+
+# Dashboard Configuration
+dashboard:
+  theme: "light"  # light, dark
+  primary_color: "#1B2951"      # Deep Navy
+  secondary_color: "#6B7280"    # Warm Gray
+  accent_color: "#3B82F6"       # Accent Blue
+  success_color: "#059669"      # Emerald
+  warning_color: "#D97706"      # Amber
+  danger_color: "#DC2626"       # Red
+  
+  # Chart settings
+  chart_height: 500
+  chart_width: 800
+  show_legend: true
+  
+  # Map settings
+  mapbox_token: "YOUR_MAPBOX_TOKEN"  # Replace with actual token
+  map_style: "open-street-map"
+
+# Mobile Configuration
+mobile:
+  enabled: true
+  responsive_breakpoint: 768  # pixels
+  touch_target_size: 44       # minimum touch target size
+  simplified_layout: true
+  
+# Security Configuration
+security:
+  authentication:
+    enabled: false  # Set to true for production
+    method: "oauth"  # oauth, saml, ldap
+    
+  authorization:
+    enabled: false  # Set to true for production
+    default_role: "viewer"
+    
+  encryption:
+    data_at_rest: true
+    data_in_transit: true
+    
+  audit:
+    enabled: true
+    retention_days: 2555  # 7 years
+
+# Backup Configuration
+backup:
+  enabled: true
+  frequency: "daily"  # hourly, daily, weekly
+  retention_days: 30
+  location: "backups/"
+  
+# Notification Settings
+notifications:
+  enabled: true
+  email:
+    smtp_server: "smtp.agcy.gov"
+    smtp_port: 587
+    username: "funding-system@agcy.gov"
+    password: "YOUR_EMAIL_PASSWORD"  # Replace with actual password
+    
+  alerts:
+    compliance_drop: true
+    funding_shortfall: true
+    data_quality_issues: true
+    system_errors: true
+
+# Development Settings
+development:
+  debug: false
+  hot_reload: true
+  mock_apis: false  # Set to true for offline development
+  
+# Testing Settings
+testing:
+  enabled: true
+  coverage_threshold: 80  # Minimum code coverage (%)
+  mock_data: true  # Use mock data for unit tests
