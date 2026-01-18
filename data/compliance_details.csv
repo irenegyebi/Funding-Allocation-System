@@ -1,0 +1,41 @@
+region_name,audit_date,audit_type,overall_score,documentation_score,eligibility_score,calculation_score,num_findings,findings,corrective_actions_due,status
+Jefferson County,2024-09-13,Program,0.9005606217312192,0.9414555113289333,0.9759718486681176,0.9797956298169848,3,Reporting: Critical priority; Eligibility: Critical priority; Reporting: Medium priority,4,Fail
+Jefferson County,2024-06-16,Financial,0.8663671943075703,0.8744228122925893,0.9737727442175625,0.9159623023437213,2,Benefit Calculation: Medium priority; Timeliness: High priority,0,Pass with Conditions
+Jefferson County,2024-01-26,Financial,0.8312108668616587,0.7982218039554874,0.9389515166586544,0.7923097210714457,3,Eligibility: Medium priority; Eligibility: High priority; Benefit Calculation: High priority,3,Fail
+Jefferson County,2024-08-04,Program,0.9150662045337807,0.9302707940699241,0.9054955162620879,0.9487686864867646,3,Reporting: High priority; Timeliness: Medium priority; Reporting: Low priority,5,Fail
+Madison County,2024-02-16,Quality Control,0.8552526928598955,0.8465826958328488,0.9347441293894094,0.8578014517102486,2,Benefit Calculation: High priority; Reporting: Low priority,5,Pass
+Madison County,2024-10-16,Financial,0.9655629813678259,0.9070162406713415,0.9328798139275544,0.8086885896960501,1,Reporting: Medium priority,1,Pass
+Madison County,2024-03-13,Compliance,0.9026875203565383,0.9164932002344975,0.8735937023148691,0.9845612923273012,0,None,0,Fail
+Madison County,2024-08-24,Quality Control,0.9608868750873578,0.9634306265301902,0.8638884201944076,0.9703137612086934,2,Benefit Calculation: Medium priority; Benefit Calculation: Critical priority,5,Pass with Conditions
+Marshall County,2024-02-12,Program,0.8024346401326367,0.7649639390367613,0.8652101356050229,0.8749274826154404,2,Benefit Calculation: Medium priority; Benefit Calculation: Medium priority,4,Pass
+Marshall County,2024-12-20,Quality Control,0.8346153710593186,0.7710195171049328,0.8465626797976693,0.9132123006511697,3,Documentation: Medium priority; Reporting: Critical priority; Timeliness: High priority,3,Fail
+Marshall County,2024-12-27,Quality Control,0.9222513310013137,0.9585258990351557,0.9759461011450865,0.9789245170540992,1,Documentation: Critical priority,4,Pass with Conditions
+Mobile County,2024-08-18,Program,0.9068144329819855,0.9026775430410253,0.897488592812981,0.9433221502907283,3,Eligibility: High priority; Reporting: Low priority; Timeliness: Medium priority,1,Pass
+Mobile County,2024-02-04,Financial,0.9520562686820302,0.7571243744591419,0.9354424595148704,0.8573386247149286,2,Documentation: Low priority; Timeliness: Low priority,1,Fail
+Mobile County,2024-06-09,Financial,0.8585283721239869,0.8972604766620322,0.9245566418387546,0.8142066156659125,0,None,0,Fail
+Montgomery County,2024-08-01,Program,0.9700617661718358,0.8896748648261323,0.8864131245707702,0.9813952164341198,1,Eligibility: High priority,5,Pass
+Montgomery County,2024-04-20,Compliance,0.8471600661970423,0.9122472999127629,0.906903995335127,0.9128815257133703,2,Reporting: Critical priority; Timeliness: Critical priority,5,Pass with Conditions
+Montgomery County,2024-11-06,Compliance,0.9505468014211306,0.8980363349282198,0.958337646089468,0.8927235522614319,2,Benefit Calculation: Medium priority; Timeliness: High priority,5,Pass with Conditions
+Morgan County,2024-11-12,Program,0.9492327841650187,0.9805221992349689,0.9477673494076138,0.9203206571924745,3,Benefit Calculation: High priority; Reporting: High priority; Reporting: Low priority,4,Fail
+Morgan County,2024-11-14,Compliance,0.9649997481817691,0.8001756754777632,0.8415161357549245,0.9550940256475862,1,Timeliness: Medium priority,3,Fail
+Morgan County,2024-09-17,Quality Control,0.8735425279608308,0.9684108758639178,0.9200358709172411,0.8128586229183211,0,None,0,Pass with Conditions
+Morgan County,2024-01-19,Quality Control,0.880434714748601,0.8915954035223526,0.9877512542292624,0.9817513256353716,0,None,0,Fail
+Shelby County,2024-11-19,Compliance,0.8303514748670863,0.9766308493769597,0.9585039105441798,0.9127819787351976,2,Timeliness: Critical priority; Timeliness: High priority,5,Pass
+Shelby County,2024-02-24,Compliance,0.9368890341447729,0.9018657625387213,0.8624408629827217,0.8576754274180896,3,Reporting: Medium priority; Documentation: Low priority; Benefit Calculation: Critical priority,2,Pass with Conditions
+Shelby County,2024-07-21,Financial,0.9116945740574296,0.9016840379097455,0.9100148628215481,0.9706781034636454,3,Reporting: Medium priority; Reporting: Low priority; Documentation: Medium priority,5,Pass with Conditions
+Shelby County,2024-07-19,Financial,0.965820885502189,0.8860870658042459,0.8219221990153034,0.9548799796256899,1,Eligibility: High priority,5,Pass with Conditions
+Talladega County,2024-10-02,Financial,0.9729957236254527,0.844722048861423,0.9336720521230588,0.8668765234434426,0,None,0,Pass with Conditions
+Talladega County,2024-07-14,Financial,0.9043176929330086,0.7805517916840485,0.8450864373242223,0.9378257988247372,2,Eligibility: High priority; Timeliness: Medium priority,0,Pass
+Tuscaloosa County,2024-02-23,Program,0.87709300373965,0.7562648713531597,0.8941466156487415,0.8629142099752071,2,Reporting: Medium priority; Eligibility: Low priority,2,Fail
+Tuscaloosa County,2024-12-15,Quality Control,0.9318326268143031,0.9814482838772498,0.9572317724600841,0.9098487446779527,2,Documentation: Critical priority; Documentation: Medium priority,0,Pass
+Tuscaloosa County,2024-09-27,Compliance,0.8732006209164234,0.7892615149073225,0.8292292039401205,0.9524470638408109,1,Reporting: Critical priority,4,Pass
+Baldwin County,2024-04-27,Program,0.8962000946732238,0.9738161315699503,0.8401756522149902,0.874872886904377,1,Reporting: High priority,1,Fail
+Baldwin County,2024-05-11,Financial,0.8382785705081347,0.9506219288873543,0.8396918159379323,0.8157377996081813,3,Eligibility: Low priority; Reporting: Medium priority; Documentation: Medium priority,4,Pass
+Etowah County,2024-02-21,Financial,0.9618412862889588,0.891290124330801,0.8837439731619083,0.9428899172679029,3,Reporting: Critical priority; Reporting: Critical priority; Timeliness: High priority,5,Pass with Conditions
+Etowah County,2024-08-23,Program,0.9350223457105922,0.7720449084885717,0.9682663377096383,0.9919722760819378,0,None,0,Pass with Conditions
+Etowah County,2024-08-20,Quality Control,0.919465395055551,0.8868181285920399,0.920763139556837,0.7812795261601293,3,Benefit Calculation: Low priority; Timeliness: Medium priority; Reporting: Medium priority,2,Pass with Conditions
+Etowah County,2024-02-21,Financial,0.9151374223618962,0.9084364368901539,0.9510946233859687,0.9288868984966109,3,Documentation: High priority; Reporting: Critical priority; Eligibility: Critical priority,4,Pass with Conditions
+Calhoun County,2024-06-27,Financial,0.8926327343127933,0.7969404124529145,0.954146331778659,0.896550215566027,1,Benefit Calculation: Medium priority,2,Fail
+Calhoun County,2024-11-27,Compliance,0.9101872200523936,0.7910409463696035,0.8634336731381996,0.9246958667359956,1,Eligibility: High priority,0,Pass
+Calhoun County,2024-10-27,Financial,0.9049938438088394,0.7956265388371351,0.9718398142960882,0.8318116554969569,0,None,0,Pass with Conditions
+Calhoun County,2024-08-18,Financial,0.9234945498771672,0.8647645622662714,0.9435564299240765,0.8645268672520051,0,None,0,Pass with Conditions
